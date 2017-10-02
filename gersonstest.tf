@@ -7,7 +7,7 @@ provider "ibm" {
     softlayer_api_key  = "${var.softlayer_api_key}"
 }
 
-resource "ibm_storage_file" "nfs_manager" {
+resource "ibm_storage_file" "ruediger_nfs_manager" {
     count      = 1
     capacity   = 20
     datacenter = "${var.datacenter}"
